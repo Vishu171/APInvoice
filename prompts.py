@@ -19,7 +19,7 @@ Details Required:
 3)Customer Name
 4)Customer Address
 5)Item Descriptions
-    i)Quantities :Unit Prices
+    i)Quantities,Unit,Prices
 8)Total Amount
 9)Due Date
 10)Payment Status
