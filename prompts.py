@@ -16,8 +16,8 @@ Details Required:
 
 1)Invoice Number
 2)Invoice Date
-3)Customer Name
-4)Customer Address
+3)REMIT TO
+4)BILL TO
 5)Item Descriptions
   i)Quantities 
   ii)Unit Prices
