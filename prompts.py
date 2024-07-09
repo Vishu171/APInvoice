@@ -10,21 +10,8 @@ from langchain.llms import OpenAI
 
 
 
-LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices considering the users question and give the answer that is specific to the users question.
+LETTER_TEMPLATE = """ You are an expert assistance extracting information from context provided that are Invoices and considering the users question and give the answer that is specific to the users question.
 Some data is in other language for example spanish.
-
-Details Required:
-
-1)Invoice Number
-2)Invoice Date
-3)PURCHASE ORDER #
-4)SHIP TO
-5)Item Descriptions
-  i)Quantities 
-  ii)Unit Prices
-6)Total Amount
-7)Due Date
-8)Payment Status
 
 Context: ```{context}```
 
