@@ -85,7 +85,7 @@ if authenticate_user():
 
    # Enter a question in chat box
    query = st.chat_input("Enter your question:")
-   st.markdown(""" ##### AI assisted solution to extract information from SOPs:
+   st.markdown(""" ##### AI assisted solution to extract information from Invoices:
 
     
     ##### Post your queries in the textbox at bottom of this page. 
