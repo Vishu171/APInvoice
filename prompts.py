@@ -11,6 +11,7 @@ from langchain.llms import OpenAI
 
 
 LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices considering the users question and give the answer that is specific to the users question.
+Some data is in other language for example spanish.
 
 Details Required:
 
