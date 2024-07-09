@@ -22,7 +22,7 @@ LETTER_PROMPT = PromptTemplate(input_variables=["question", "context"], template
 
 llm = ChatOpenAI(
     model_name="gpt-3.5-turbo",
-    temperature=0.1,
+    temperature=0.4,
     max_tokens=1000, 
     openai_api_key=st.secrets["openai_key"]
 )
