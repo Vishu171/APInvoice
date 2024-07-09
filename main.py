@@ -74,7 +74,7 @@ if authenticate_user():
             image = Image.open("assets/jadeglobal.png")
             image = st.image('assets/jadeglobal.png',width=290)
             st.write("""
-            ## Solution for L1 and L2 team 
+            ## Invoice Data
             """)
             st.write("""
 
