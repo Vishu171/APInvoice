@@ -10,18 +10,7 @@ from langchain.llms import OpenAI
 
 
 
-LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices.
-Details Required:
-
-1)Invoice Number
-2)Invoice Date
-3)Supplier Name
-4)Customer Name or Ship To
-5)Item Descriptions
-  i)Quantities 
-  ii)Unit Prices
-6)Total Amount
-7)Due Date
+LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices considering the users question.
 
 Context: ```{context}```
 
