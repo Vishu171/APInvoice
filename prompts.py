@@ -34,7 +34,7 @@ Your invoices details are:
 LETTER_PROMPT = PromptTemplate(input_variables=["question", "context"], template=LETTER_TEMPLATE, )
 
 llm = ChatOpenAI(
-    model_name="gpt-4",
+    model_name="gpt-3.5-turbo",
     temperature=0.1,
     max_tokens=1000, 
     openai_api_key=st.secrets["openai_key"]
