@@ -16,7 +16,7 @@ Details Required:
 
 1)Invoice Number
 2)Invoice Date
-3)Customer Name/REMIT TO
+3)SHIPPED FROM
 4)BILL TO
 5)Item Descriptions
   i)Quantities 
@@ -29,7 +29,7 @@ Context: ```{context}```
 
 Question: ```{question}```
 
-Your invoices details are:
+Invoice Details:
 """
 LETTER_PROMPT = PromptTemplate(input_variables=["question", "context"], template=LETTER_TEMPLATE, )
 
