@@ -10,7 +10,7 @@ from langchain.llms import OpenAI
 
 
 
-LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices and take into consideration \User Question : ```{question}```.
+LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices and take into consideration \User Question.
 
 Details Required:
 
