@@ -10,21 +10,48 @@ from langchain.llms import OpenAI
 
 
 
-LETTER_TEMPLATE = """ Your task is to extract the detailed Resolution Steps from the \context of the generic documents that contains resolution steps for the \Issue Description or \Problem Statement.
+LETTER_TEMPLATE = """ Your Objective is to Extract and display detailed information from invoices that you will get as \context.
 
-If the context has \Owner or NOTE information also then add it to the solution. 
+Details Required:
 
-Also include the \Substeps if \present in the \context of a particular question.
+1)Invoice Number
+2)Invoice Date
+3)Customer Name
+4)Customer Address
+5)Item Descriptions
+6)Quantities
+7)Unit Prices
+8)Total Amount
+9)Due Date
+10)Payment Status
 
-Provide an Steps based on the \context, and if you can't find anything relevant to the \question asked by the user , just say "I'm sorry, I couldn't find that."
+For Example:
+
+"invoice_number": "INV-12345",
+"invoice_date": "2024-07-01",
+"customer_name": "John Doe",
+"customer_address": "123 Elm Street, Springfield, IL",
+"item_descriptions": [
+	"Item A",
+	"Item B"
+],
+"quantities": [
+	2,
+	3
+],
+"unit_prices": [
+	50.00,
+	30.00
+],
+"total_amount": 190.00,
+"due_date": "2024-07-15",
+"payment_status": "Paid"
 
 Context: ```{context}```
 
 Question: ```{question}```
 
-These are steps to follow to solve the {question}:
-
-Steps:
+Your invoices details are:
 """
 LETTER_PROMPT = PromptTemplate(input_variables=["question", "context"], template=LETTER_TEMPLATE, )
 
