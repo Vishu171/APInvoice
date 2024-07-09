@@ -10,7 +10,7 @@ from langchain.llms import OpenAI
 
 
 
-LETTER_TEMPLATE = """ Your Objective is to Extract and display detailed information from invoices that you will get as \context.
+LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices.
 
 Details Required:
 
@@ -34,7 +34,7 @@ Invoice Details:
 LETTER_PROMPT = PromptTemplate(input_variables=["question", "context"], template=LETTER_TEMPLATE, )
 
 llm = ChatOpenAI(
-    model_name="gpt-4",
+    model_name="gpt-3.5-turbo",
     temperature=0.1,
     max_tokens=1000, 
     openai_api_key=st.secrets["openai_key"]
