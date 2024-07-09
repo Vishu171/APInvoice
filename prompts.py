@@ -10,13 +10,13 @@ from langchain.llms import OpenAI
 
 
 
-LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices.
+LETTER_TEMPLATE = """ Your Objective is to give detailed information from invoices and take into consideration \User Question : ```{question}```.
 
 Details Required:
 
 1)Invoice Number
 2)Invoice Date
-3)PURCHASE ORDER #
+3)PURCHASE ORDER Number
 4)SHIP TO
 5)Item Descriptions
   i)Quantities 
