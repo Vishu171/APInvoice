@@ -16,7 +16,7 @@ Details Required:
 
 1)Invoice Number
 2)Invoice Date
-3)PURCHASE ORDER 
+3)PURCHASE ORDER #
 4)SHIP TO
 5)Item Descriptions
   i)Quantities 
