@@ -14,16 +14,34 @@ LETTER_TEMPLATE = """ Your Objective is to Extract and display detailed informat
 
 Details Required:
 
-1)Invoice Number
-2)Invoice Date
-3)Customer Name
-4)Customer Address
-5)Item Descriptions
-    i)Quantities,Unit,Prices
-8)Total Amount
-9)Due Date
-10)Payment Status
-11) Purchase Order Number(PO)
+For an example:
+
+{
+    "invoice_number": "INV-12345",
+    "invoice_date": "2024-07-01",
+    "customer": {
+        "name": "John Doe",
+        "address": "123 Elm Street, Springfield, IL"
+    },
+    "items": [
+        {
+            "description": "Item A",
+            "quantity": 2,
+            "unit_price": 50.00
+        },
+        {
+            "description": "Item B",
+            "quantity": 3,
+            "unit_price": 30.00
+        }
+    ],
+    "total_amount": 190.00,
+    "due_date": "2024-07-15",
+    "payment_status": "Paid",
+    "currency": "USD",
+    "created_by": "Admin",
+    "last_modified_date": "2024-07-05"
+}
 
 Context: ```{context}```
 
