@@ -23,6 +23,7 @@ Details Required:
 8)Total Amount
 9)Due Date
 10)Payment Status
+11) Purchase Order Number(PO)
 
 Context: ```{context}```
 
