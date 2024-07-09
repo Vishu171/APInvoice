@@ -25,28 +25,6 @@ Details Required:
 9)Due Date
 10)Payment Status
 
-For Example:
-
-"invoice_number": "INV-12345",
-"invoice_date": "2024-07-01",
-"customer_name": "John Doe",
-"customer_address": "123 Elm Street, Springfield, IL",
-"item_descriptions": [
-	"Item A",
-	"Item B"
-],
-"quantities": [
-	2,
-	3
-],
-"unit_prices": [
-	50.00,
-	30.00
-],
-"total_amount": 190.00,
-"due_date": "2024-07-15",
-"payment_status": "Paid"
-
 Context: ```{context}```
 
 Question: ```{question}```
