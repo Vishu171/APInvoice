@@ -22,7 +22,6 @@ Details Required:
   ii)Unit Prices
 6)Total Amount
 7)Due Date
-8)Payment Status
 
 Context: ```{context}```
 
