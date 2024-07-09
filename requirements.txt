@@ -1,0 +1,8 @@
+langchain_community
+sqlalchemy
+faiss-cpu
+streamlit_option_menu
+openai==0.27.8 
+pandas
+tiktoken
+pypdf
