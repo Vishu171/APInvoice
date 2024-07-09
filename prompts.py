@@ -16,8 +16,8 @@ Details Required:
 
 1)Invoice Number
 2)Invoice Date
-3)SHIPPED FROM
-4)BILL TO
+3)REMIT TO(A "remit to" address on an invoice tells clients where to send payment to settle an invoice.)
+4)Customer Name or BILL TO
 5)Item Descriptions
   i)Quantities 
   ii)Unit Prices
