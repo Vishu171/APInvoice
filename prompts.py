@@ -53,7 +53,7 @@ def letter_chain(question):
     docsearch = get_faiss()
     retreiver = docsearch.as_retriever(#
         #search_type="similarity", #"similarity", "mmr"
-        search_kwargs={"k":3}
+        search_kwargs={"k":5}
     )
     qa_chain = RetrievalQA.from_chain_type(llm, 
                                             retriever=retreiver,
